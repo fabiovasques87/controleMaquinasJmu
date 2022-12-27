@@ -35,7 +35,7 @@ export const Index =() =>{
             
            
             <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '18rem', height:'10rem '}}>
                             <Card.Body>
                                 <Card.Title className={Style.title}>Plenário</Card.Title>                               
                                 <Link to="/Plenario"><button className={"btn btn-success"}>Ir para </button></Link>
@@ -43,7 +43,7 @@ export const Index =() =>{
                         </Card>                
             </div>
             <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '18rem', height:'10rem '  }}>
                             <Card.Body>
                                 <Card.Title className={Style.title}>ADM</Card.Title>                               
                                 <Link to="/adm"><button className={"btn btn-success"}>Ir para </button></Link>
@@ -51,7 +51,7 @@ export const Index =() =>{
                         </Card>                
             </div>
             <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '18rem', height:'10rem ' }}>
                             <Card.Body>
                                 <Card.Title className={Style.title}>Video Conferêcia</Card.Title>                                
                                 <Link to="/Video"><button className={"btn btn-success"}>Ir para</button></Link>
@@ -59,21 +59,14 @@ export const Index =() =>{
                         </Card>                
             </div>
             <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '18rem' , height:'10rem ' }}>
                             <Card.Body>
                                 <Card.Title className={Style.title}>Video Conferêcia</Card.Title>                                
                                 <Link to="/Video"><button className={"btn btn-success"}>Ir para</button></Link>
                             </Card.Body>
                         </Card>                
             </div>
-            <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Body>
-                                <Card.Title className={Style.title}>Video Conferêcia</Card.Title>                                
-                                <Link to="/Video"><button className={"btn btn-success"}>Ir para</button></Link>
-                            </Card.Body>
-                        </Card>                
-            </div>
+           
             {/* <>
                 <ul>
                     {lists.map((lists, index)=>(
