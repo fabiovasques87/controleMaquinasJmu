@@ -52,13 +52,11 @@ export const Escrivao =() =>{
                     <div className={style.sectionImg} >
                         <Carousel variant="dark">
                             <Carousel.Item>
-                                <img src={monitores} alt="Monitores escrivão" className={style.monitores} />                
+                                <img className="d-block w-100" src={monitores} alt="Monitores escrivão" />                
                             </Carousel.Item>
+                            
                             <Carousel.Item>
-                                <img src={cpu} alt="CPU escrivão" className={style.cpu} />                
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img src={elitedesk}  className={style.cpu} />                
+                                <img className="d-block w-100" src={elitedesk}   />                
                             </Carousel.Item>
                         </Carousel>
                     </div>                
