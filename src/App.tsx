@@ -1,12 +1,12 @@
-import {useRoutes} from 'react-router-dom';
+import {useRoutes, Link} from 'react-router-dom';
 import logoJmu from './assets/logoJmu.png';
 // import { lists } from './helpers/Dados';
 import {MyRoutes} from './routes/MyRoutes';
 import Style  from './styles.module.css';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faHouse } from '@fortawesome/free-solid-svg-icons';
 
-
-
-  
 
 const App = () =>{
 
@@ -15,17 +15,25 @@ const App = () =>{
   return (
     <div>
       <div className={Style.header}>
-        <h1>Informações de Equipamentos de Informática</h1>< br />
-
+        <h1 className={Style.textHeader}>Informações de Equipamentos de Informática</h1>  
+      <Link to={'/'} className={Style.iconHouse}><FontAwesomeIcon icon={faHouse}  /> </Link>      
       </div>
       <div className={Style.section}>
           <MyRoutes /> <br />
           
       </div>
-      <div className={Style.footer}>
+      
+      {
+        /*
+      
+      <div className={Style.footer}>        
         <h3>JMU</h3>
-        {/* <img src={logoJmu} className={Style.logoJmu} /> */}
+        <hr />
+        /* <img src={logoJmu} className={Style.logoJmu} /> 
       </div>
+      */
+      }
+      
     </div>
   );
 }

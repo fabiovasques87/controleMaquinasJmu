@@ -30,9 +30,9 @@ export const Escrivao =() =>{
         ];
 
     return (
-        <div>
+        <div className={style.section}>
 
-                <h3 className={style.fichaTecnica}>Ficha Técnica</h3>
+                <h3 className={style.backgroundTexto}>Ficha Técnica</h3>
                 <hr />
                 <>
 
@@ -47,30 +47,23 @@ export const Escrivao =() =>{
 
                 <hr />
                         
-                 <h4>Imagens do local:</h4>       
+                 <h4 className={style.backgroundTexto}>Imagens do local:</h4>       
 
-                 
-     <div className={style.section}>
-            <Carousel variant="dark">
-                <Carousel.Item>
-                     <img src={monitores} alt="Monitores escrivão" className={style.monitores} />                
-            </Carousel.Item>
-            <Carousel.Item>
-            <img src={cpu} alt="CPU escrivão" className={style.cpu} />                
-            </Carousel.Item>
-            <Carousel.Item>
-            <img src={elitedesk}  className={style.cpu} />                
-            </Carousel.Item>
-            </Carousel>
-        </div>                
-
+                    <div className={style.sectionImg} >
+                        <Carousel variant="dark">
+                            <Carousel.Item>
+                                <img src={monitores} alt="Monitores escrivão" className={style.monitores} />                
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={cpu} alt="CPU escrivão" className={style.cpu} />                
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={elitedesk}  className={style.cpu} />                
+                            </Carousel.Item>
+                        </Carousel>
+                    </div>                
 
 
-                
-
-                        <div className={style.sectionBottom}>
-                            <Link to="/"><button className={"btn btn-success"}>Página  Inicial</button></Link>
-                        </div>
         </div>
     );  
 }

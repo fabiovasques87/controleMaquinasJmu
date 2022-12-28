@@ -16,12 +16,13 @@ body{
 
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 120px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
 }
+
 
 .title{
     font-size: 30px;
@@ -65,8 +66,29 @@ li{
     left: 0;
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: -120px;
+}
+.linhaFooter{
+    border: 1px solid red;
 }
 .logoJmu{
     width: 300px;
     height: 200px;
+}
+.textHeader{
+    margin-left: 160px;
+   
+}
+.iconHouse{
+    margin-right: -150px;
+    color: #198754;
+    font-size: 22px;
+}
+.iconHouse:hover{
+    color: #000;
+    
+}
+.textTitulo{
+    text-align: center;
+    margin-bottom: 30px;
 }
