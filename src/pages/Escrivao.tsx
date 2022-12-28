@@ -5,6 +5,7 @@ import monitores from '../assets/escrivao/monitores.jpeg';
 import cpu from '../assets/escrivao/cpu.jpeg';
 import elitedesk from  '../assets/escrivao/elitedesk.jpg';
 import style from '../escrivao.module.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 export const Escrivao =() =>{
@@ -48,12 +49,24 @@ export const Escrivao =() =>{
                         
                  <h4>Imagens do local:</h4>       
 
-                <div className={style.sectionTop}>
-                    <img src={monitores} alt="Monitores escrivão" className={style.monitores} />   
-                    <img src={cpu} alt="CPU escrivão" className={style.cpu} />  
-                    <img src={elitedesk}  className={style.cpu} />        
+                 
+     <div className={style.section}>
+            <Carousel variant="dark">
+                <Carousel.Item>
+                     <img src={monitores} alt="Monitores escrivão" className={style.monitores} />                
+            </Carousel.Item>
+            <Carousel.Item>
+            <img src={cpu} alt="CPU escrivão" className={style.cpu} />                
+            </Carousel.Item>
+            <Carousel.Item>
+            <img src={elitedesk}  className={style.cpu} />                
+            </Carousel.Item>
+            </Carousel>
+        </div>                
 
-                </div>
+
+
+                
 
                         <div className={style.sectionBottom}>
                             <Link to="/"><button className={"btn btn-success"}>Página  Inicial</button></Link>
