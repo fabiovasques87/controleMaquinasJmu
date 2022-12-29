@@ -19,7 +19,7 @@ const App = () =>{
       <div className={Style.header}>
       <Link to={'/'} className={Style.iconHouse}><FontAwesomeIcon icon={faHouse}  /> </Link>  
       <h1 className={Style.textHeader}>Equipamentos de Informática</h1>      
-          <DropdownButton id="dropdown-item-button"   variant="secondary" title="ADM">
+          <DropdownButton id="dropdown-item-button"   variant="success" title="ADM">
             <Link to={'/editarItens'} className={Style.editarItens}><Dropdown.ItemText >Gerenciar itens</Dropdown.ItemText></Link>
           </DropdownButton>
       </div>

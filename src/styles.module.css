@@ -133,3 +133,24 @@ li{
 .editarItens{
     text-decoration: none;
 }
+
+.NotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+    .textHeader{
+        font-size: 20px;
+        
+     }
+
+     .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

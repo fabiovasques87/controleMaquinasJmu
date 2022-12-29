@@ -61,3 +61,10 @@ li{
     text-transform: uppercase;
     text-align: center;
 }
+
+@media (max-width: 700px){
+    .backgroundTexto{
+        font-size: 16px;
+        
+     }
+}
