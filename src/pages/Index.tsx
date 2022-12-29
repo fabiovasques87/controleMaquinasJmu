@@ -34,30 +34,41 @@ export const Index =() =>{
         
             
             <div className={Style.container}>
-                        <Card style={{ width: '400px', height:'180px '}}>
-                            <Card.Body>
-                                <Card.Title className={Style.titleCard}>Plenário</Card.Title>                               
-                                <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>
-                            </Card.Body>
+                        <Card style={{ width: '300px', height:'180px ', border: '0'}}>
+                            <Link to={'/plenario'} className={Style.link}>
+                                <Card.Body className={Style.cardBody}>
+                                    <Card.Title className={Style.titleCard}>Plenário</Card.Title>                               
+                                {/* <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>*/}
+                                </Card.Body>
+                            </Link>
                         </Card> 
-                        <Card style={{ width: '400px', height:'180px '}}>
-                            <Card.Body>
-                                <Card.Title className={Style.titleCard}>ADM</Card.Title>                               
-                                <Link to="/adm" className={Style.link}><button className={Style.button}>Ir para </button></Link>
-                            </Card.Body>
+                        <Card style={{ width: '300px', height:'180px ', border: '0'}}>
+                            <Link to={'/adm'} className={Style.link}>
+                                <Card.Body className={Style.cardBody}>
+                                    <Card.Title className={Style.titleCard}>ADM</Card.Title>                               
+                                {/* <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>*/}
+                                </Card.Body>
+                            </Link>
                         </Card> 
-                        <Card style={{ width: '400px', height:'180px '}}>
-                            <Card.Body>
-                                <Card.Title className={Style.titleCard}>Oficiais de Justiça</Card.Title>                               
-                                <Link to="/Plenario" className={Style.link}><button className={Style.button}>Ir para </button></Link>
-                            </Card.Body>    
+                        <Card style={{ width: '300px', height:'180px ', border: '0'}}>
+                            <Link to={'/plenario'} className={Style.link}>
+                                <Card.Body className={Style.cardBody}>
+                                    <Card.Title className={Style.titleCard}>Almoxarifado</Card.Title>                               
+                                {/* <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>*/}
+                                </Card.Body>
+                            </Link>
                         </Card> 
-                        <Card style={{ width: '400px', height:'180px '}}>
-                            <Card.Body>
-                                <Card.Title className={Style.titleCard}>Almoxarifado</Card.Title>                               
-                                <Link to="/Plenario" className={Style.link}><button className={Style.button}>Ir para </button></Link>
-                            </Card.Body>
+                        <Card style={{ width: '300px', height:'180px ', border: '0'}}>
+                            <Link to={'/video'} className={Style.link}>
+                                <Card.Body className={Style.cardBody}>
+                                    <Card.Title className={Style.titleCard}>Video Conferência</Card.Title>                               
+                                {/* <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>*/}
+                                </Card.Body>
+                            </Link>
                         </Card> 
+                       
+                         
+                         
                       
            
             {/* <>

@@ -6,7 +6,8 @@ import Style  from './styles.module.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faHouse } from '@fortawesome/free-solid-svg-icons';
-
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const App = () =>{
 
@@ -14,10 +15,17 @@ const App = () =>{
 
   return (
     <div>
+
       <div className={Style.header}>
-        <h1 className={Style.textHeader}>Informações de Equipamentos de Informática</h1>  
-      <Link to={'/'} className={Style.iconHouse}><FontAwesomeIcon icon={faHouse}  /> </Link>      
+      <Link to={'/'} className={Style.iconHouse}><FontAwesomeIcon icon={faHouse}  /> </Link>  
+      <h1 className={Style.textHeader}>Equipamentos de Informática</h1>      
+          <DropdownButton id="dropdown-item-button"   variant="secondary" title="ADM">
+            <Link to={'/editarItens'} className={Style.editarItens}><Dropdown.ItemText >Gerenciar itens</Dropdown.ItemText></Link>
+          </DropdownButton>
       </div>
+
+
+    
       <div className={Style.section}>
           <MyRoutes /> <br />
           

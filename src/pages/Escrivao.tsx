@@ -47,7 +47,7 @@ export const Escrivao =() =>{
                         </>
 
                         <hr />
-                        <h4 className={style.backgroundTexto}>Imagens do local:</h4>       
+                        <h4 className={style.backgroundTexto}>Imagens dos Equipamentos</h4>       
 
                             <div className={style.section}>
                                     <div className={style.sectionImg} >
