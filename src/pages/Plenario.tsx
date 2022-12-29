@@ -9,44 +9,105 @@ export const Plenario =() =>{
 
     return (
         <div>
-            <h2 className={style.textTitulo}>Plenário</h2>
-            <Table responsive>
-            <thead>
-                    <tr>
-                    <th>Patrimonio</th>
-                    <th>Monitor</th>
-                    <th>Microcomputador</th>
-                    <th>WebCam</th>
-                    <th>Teclado</th>
-                    <th>Mouse</th>
-                    <th>S.O</th>
-                    <th>Processador</th>
-                    <th>Memória Ram</th>
-                    <th>Hostname</th>
-                    <th>IP</th>
-                    <th>OBS</th>
-                    <th>Gerenciamento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>172.16.14.X</td>
-                    <td>Otto</td>
-                    <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
-                    </tr>
-                </tbody>
-            </Table>
-
+            <h2 className={style.textTituloPlenario}>Plenário</h2>
+            <div className={style.section}>
+                    <Table responsive>
+                    <thead>
+                            <tr>
+                            <th>Patrimonio</th>
+                            <th>Monitor</th>
+                            <th>Microcomputador</th>
+                            <th>WebCam</th>
+                            <th>Teclado</th>
+                            <th>Mouse</th>
+                            <th>S.O</th>
+                            <th>Processador</th>
+                            <th>Memória Ram</th>
+                            <th>Hostname</th>
+                            <th>IP</th>
+                            <th>OBS</th>
+                            <th>Gerenciamento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>172.16.14.X</td>
+                            <td>Otto</td>
+                            <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>172.16.14.X</td>
+                            <td>Otto</td>
+                            <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>172.16.14.X</td>
+                            <td>Otto</td>
+                            <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>172.16.14.X</td>
+                            <td>Otto</td>
+                            <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            </tr>
+                            <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>172.16.14.X</td>
+                            <td>Otto</td>
+                            <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            </tr>
+                        </tbody>
+                    </Table>
+            </div>
 
             {
                 /*

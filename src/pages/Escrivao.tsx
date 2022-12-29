@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import planta from '../assets/planta.jpg';
-import monitores from '../assets/escrivao/monitores.jpeg';
+import monitores from '../assets/escrivao/monitores_atual.jpeg';
 import cpu from '../assets/escrivao/cpu.jpeg';
-import elitedesk from  '../assets/escrivao/elitedesk.jpg';
+import elitedesk from  '../assets/escrivao/elitedesk_atual.jpg';
 import style from '../escrivao.module.css';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -30,37 +30,39 @@ export const Escrivao =() =>{
         ];
 
     return (
-        <div className={style.section}>
+        <div className={style.container}>
 
-                <h3 className={style.backgroundTexto}>Ficha Técnica</h3>
-                <hr />
-                <>
 
-                <ul>
-                    {lists.map((lists, index)=>(
+                        <h3 className={style.backgroundTexto}>Ficha Técnica</h3>
+                        <hr />
+                        <>
+
+                        <ul>
+                            {lists.map((lists, index)=>(
+                                
+                            <li key={index}>{lists.item} {lists.marca} </li>
                         
-                      <li key={index}>{lists.item} {lists.marca} </li>
-                   
-                    ))}
-                    </ul>
-                </>
+                            ))}
+                            </ul>
+                        </>
 
-                <hr />
-                        
-                 <h4 className={style.backgroundTexto}>Imagens do local:</h4>       
+                        <hr />
+                        <h4 className={style.backgroundTexto}>Imagens do local:</h4>       
 
-                    <div className={style.sectionImg} >
-                        <Carousel variant="dark">
-                            <Carousel.Item>
-                                <img className="d-block w-100" src={monitores} alt="Monitores escrivão" />                
-                            </Carousel.Item>
-                            
-                            <Carousel.Item>
-                                <img className="d-block w-100" src={elitedesk}   />                
-                            </Carousel.Item>
-                        </Carousel>
-                    </div>                
-
+                            <div className={style.section}>
+                                    <div className={style.sectionImg} >
+                                        <Carousel variant="dark">
+                                            <Carousel.Item>
+                                                <img className="d-block w-100" src={monitores} alt="Monitores escrivão" />                
+                                            </Carousel.Item>
+                                            
+                                            <Carousel.Item>
+                                                <img className="d-block w-100" src={elitedesk}   />                
+                                            </Carousel.Item>
+                                        </Carousel>
+                                    </div>   
+                            </div>                     
+                              
 
         </div>
     );  

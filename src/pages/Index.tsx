@@ -31,41 +31,34 @@ export const Index =() =>{
     //     ];
 
     return (
-        <div className={Style.section}>
+        
             
-           
-            <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem', height:'10rem '}}>
+            <div className={Style.container}>
+                        <Card style={{ width: '400px', height:'180px '}}>
                             <Card.Body>
-                                <Card.Title className={Style.title}>Plenário</Card.Title>                               
-                                <Link to="/Plenario"><button className={"btn btn-success"}>Ir para </button></Link>
+                                <Card.Title className={Style.titleCard}>Plenário</Card.Title>                               
+                                <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>
                             </Card.Body>
-                        </Card>                
-            </div>
-            <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem', height:'10rem '  }}>
+                        </Card> 
+                        <Card style={{ width: '400px', height:'180px '}}>
                             <Card.Body>
-                                <Card.Title className={Style.title}>ADM</Card.Title>                               
-                                <Link to="/adm"><button className={"btn btn-success"}>Ir para </button></Link>
+                                <Card.Title className={Style.titleCard}>ADM</Card.Title>                               
+                                <Link to="/adm" className={Style.link}><button className={Style.button}>Ir para </button></Link>
                             </Card.Body>
-                        </Card>                
-            </div>
-            <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem', height:'10rem ' }}>
+                        </Card> 
+                        <Card style={{ width: '400px', height:'180px '}}>
                             <Card.Body>
-                                <Card.Title className={Style.title}>Video Conferêcia</Card.Title>                                
-                                <Link to="/Video"><button className={"btn btn-success"}>Ir para</button></Link>
-                            </Card.Body>
-                        </Card>                
-            </div>
-            <div className={Style.cardBody}>
-                        <Card style={{ width: '18rem' , height:'10rem ' }}>
+                                <Card.Title className={Style.titleCard}>Oficiais de Justiça</Card.Title>                               
+                                <Link to="/Plenario" className={Style.link}><button className={Style.button}>Ir para </button></Link>
+                            </Card.Body>    
+                        </Card> 
+                        <Card style={{ width: '400px', height:'180px '}}>
                             <Card.Body>
-                                <Card.Title className={Style.title}>Video Conferêcia</Card.Title>                                
-                                <Link to="/Video"><button className={"btn btn-success"}>Ir para</button></Link>
+                                <Card.Title className={Style.titleCard}>Almoxarifado</Card.Title>                               
+                                <Link to="/Plenario" className={Style.link}><button className={Style.button}>Ir para </button></Link>
                             </Card.Body>
-                        </Card>                
-            </div>
+                        </Card> 
+                      
            
             {/* <>
                 <ul>
