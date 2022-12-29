@@ -3,6 +3,8 @@ import { Button } from "react-bootstrap";
 import planta from '../assets/planta.jpg';
 import style from '../styles.module.css';
 import Table from 'react-bootstrap/Table';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 export const Plenario =() =>{
     
@@ -26,7 +28,7 @@ export const Plenario =() =>{
                             <th>Hostname</th>
                             <th>IP</th>
                             <th>OBS</th>
-                            <th>Gerenciamento</th>
+                            <th colSpan={2}>Gerenciamento</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,6 +46,11 @@ export const Plenario =() =>{
                             <td>172.16.14.X</td>
                             <td>Otto</td>
                             <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            <td>
+                                 <DropdownButton id="dropdown-item-button"   variant="success" title="ADM">
+                                    <Link to={'/editarItens'} className={style.editarItens}><Dropdown.ItemText >Gerenciar itens</Dropdown.ItemText></Link>
+                                </DropdownButton>
+                            </td>
                             </tr>
                             <tr>
                             <td>1</td>
@@ -59,6 +66,11 @@ export const Plenario =() =>{
                             <td>172.16.14.X</td>
                             <td>Otto</td>
                             <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            <td>
+                                 <DropdownButton id="dropdown-item-button"   variant="success" title="ADM">
+                                    <Link to={'/editarItens'} className={style.editarItens}><Dropdown.ItemText >Gerenciar itens</Dropdown.ItemText></Link>
+                                </DropdownButton>
+                            </td>
                             </tr>
                             <tr>
                             <td>1</td>
@@ -74,6 +86,11 @@ export const Plenario =() =>{
                             <td>172.16.14.X</td>
                             <td>Otto</td>
                             <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            <td>
+                                 <DropdownButton id="dropdown-item-button"   variant="success" title="ADM">
+                                    <Link to={'/editarItens'} className={style.editarItens}><Dropdown.ItemText >Gerenciar itens</Dropdown.ItemText></Link>
+                                </DropdownButton>
+                            </td>
                             </tr>
                             <tr>
                             <td>1</td>
@@ -89,6 +106,11 @@ export const Plenario =() =>{
                             <td>172.16.14.X</td>
                             <td>Otto</td>
                             <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            <td>
+                                 <DropdownButton id="dropdown-item-button"   variant="success" title="ADM">
+                                    <Link to={'/editarItens'} className={style.editarItens}><Dropdown.ItemText >Gerenciar itens</Dropdown.ItemText></Link>
+                                </DropdownButton>
+                            </td>
                             </tr>
                             <tr>
                             <td>1</td>
@@ -104,6 +126,11 @@ export const Plenario =() =>{
                             <td>172.16.14.X</td>
                             <td>Otto</td>
                             <td><Link to={'/escrivao'} ><button className={"btn btn-success"} >Acessar </button> </Link></td>
+                            <td>
+                                 <DropdownButton id="dropdown-item-button"   variant="success" title="ADM">
+                                    <Link to={'/editarItens'} className={style.editarItens}><Dropdown.ItemText >Gerenciar itens</Dropdown.ItemText></Link>
+                                </DropdownButton>
+                            </td>
                             </tr>
                         </tbody>
                     </Table>
