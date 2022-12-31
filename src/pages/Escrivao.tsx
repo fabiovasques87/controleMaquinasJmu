@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import planta from '../assets/planta.jpg';
+import planta from '../assets/escrivao/planta.jpg';
 import monitores from '../assets/escrivao/monitores_atual.jpeg';
 import cpu from '../assets/escrivao/cpu.jpeg';
 import elitedesk from  '../assets/escrivao/elitedesk_atual.jpg';
@@ -58,6 +58,9 @@ export const Escrivao =() =>{
                                             
                                             <Carousel.Item>
                                                 <img className="d-block w-100" src={elitedesk}   />                
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img className="d-block w-100" src={planta}   />                
                                             </Carousel.Item>
                                         </Carousel>
                                     </div>   

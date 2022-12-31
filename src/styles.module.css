@@ -37,7 +37,6 @@ body{
     width: auto;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
-    position:static;
 }
 
 
@@ -51,6 +50,9 @@ body{
 
 
 .cardBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     border: 0.2px solid;
     box-shadow: 8px 5px 5px #ccc;
@@ -102,13 +104,14 @@ li{
 
 
 .textHeader{
-   /* margin-left: 300px;*/
+    /* margin-left: -80rem; */
    
 }
 .iconHouse{
-    /*margin-right: -150px;*/
+    /* margin-left: -60rem; */
     color: #198754;
     font-size: 22px;
+    
 }
 .iconHouse:hover{
     color: #000;
@@ -140,9 +143,37 @@ li{
     align-items: center;
 }
 
+.alignButtonTable{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+}
+.alignTextTable{
+   text-align: center;
+}
+
+.menuAmburguer{
+    display: none;
+}
+
+ .linkMenuAmburguer{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px){
     .textHeader{
-        font-size: 20px;
+        display: none;
+        font-size: 22px;
         
      }
 
@@ -153,4 +184,65 @@ li{
         align-items: center;
 
     }
+    .menuAmburguer{
+        display: block;
+        background-color: #000;
+        padding: 10px;
+        border-radius: 8px;
+        width: 50px;
+        height: 50px;
+        margin-left: 330px;
+    }
+
+    .borderMenuAmburguer{
+        border-top: 1px solid #fff;
+    }
+    .dropdownPainelControle{
+        display: none;
+    }
+    .iconHouse{
+       display: none;
+        
+    }
+
+    .areaMenuAmburguer{
+        display: block;
+        padding: 10px;
+        margin-top: 80px;
+        font-size: 16px;
+
+    }
+
+
+     .heightMenuAmburguer{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: #fff;
+        z-index: 10;
+        margin-top: 100px;
+        height:auto;
+        width: 200px;
+    } 
+
+    .linkMenuAmburguer{
+        color: #000;
+        margin-bottom: 40px;
+        
+    }
+    .linkMenuAmburguer:hover{
+        color: #000;
+        border-bottom: 1px solid red;
+        font-size: 20px;
+    } 
+    /* .textHeader{
+        margin-left: -3rem;
+        font-size: 25px;
+       
+    }
+    .iconHouse{
+        margin-left: -2rem;
+        color: #198754;
+        font-size: 22px;
+    } */
 }
