@@ -3,16 +3,17 @@ import Form from 'react-bootstrap/Form';
 import { Button } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 
 
 export const SearchItem = () => {
     return (
         <div>
-            <Form>
-                <fieldset >
+            <Form className={style.fieldsetSearch}>
                     <Form.Control type='text' placeholder='Pesquise pelo Número do Patrimonio' />
-                </fieldset>
-
+                <FontAwesomeIcon  className={style.faSearchPlus} icon={faSearchPlus}  />
+            </Form>
                 <Table responsive>
                     <thead>
                             <tr>
@@ -92,7 +93,7 @@ export const SearchItem = () => {
                             
                         </tbody>
                     </Table>
-            </Form>
+            
         </div>
     );
 }
