@@ -35,8 +35,6 @@ const App = () =>{
                 <Link to={'/video'} className={Style.editarItens}><Dropdown.ItemText >Vídeo Conferência</Dropdown.ItemText></Link>
             </DropdownButton>   
 
-          {/*Icone do menu amburger, quando clica, chama a função que abri a nav, usando o useState  */}
-
             <FontAwesomeIcon className={Style.menuAmburger} onClick={Open} icon={faBars} />
 
             {/* <button className={Style.menuAmburger} onClick={Open}>Show Nav</button> */}
@@ -56,18 +54,72 @@ const App = () =>{
             </ul> 
             </nav>} 
 
+            {/* <div className={Style.menu}>
+              <div className={Style.menuAmburguer} onClick={Open}>
+                  <div className={Style.linhaMenu1}></div>
+                  <div className={Style.linhaMenu2}></div>
+                  <div className={Style.linhaMenu3}></div>
+              </div>
+              <div className={Style.Nav} style={{ }}>
+                      
+                  <ul className={Style.listItens}>
+                      <li>fsfsdf</li>
+                  </ul> 
+              </div>
+            </div> */}
+            
+   
         
-        
-      </div> {/*Fechamento header  */}
+             {/* Button Collspan para responsividade no smartphone */}
+             <>
+           
+                {/* <div
+                  onClick={() => setOpen(!open)}
+                  aria-controls="example-collapse-text"
+                  aria-expanded={open}
+                  className={Style.menuAmburguer} 
+                  >
+                    <div className={Style.borderMenuAmburguer}> ---</div>
+                    <div className={Style.borderMenuAmburguer}>---</div>
+           
+                </div> */}
+           
+
+            <div className={Style.areaMenuAmburguer}>
+        {/* <Collapse in={open} dimension="height">
+          <div id="example-collapse-text" >
+            <Card className={Style.heightMenuAmburguer} body style={{}}>
+            <Link className={Style.linkMenuAmburguer} to={'/'}>Home</Link><br />
+              <Link className={Style.linkMenuAmburguer} to={'/plenario'}>Plenário</Link><br />
+              <Link className={Style.linkMenuAmburguer} to={'/adm'}>Adm</Link><br />
+              <Link className={Style.linkMenuAmburguer} to={'/video'}>Vídeo Conferencia</Link><br />
+              <Link className={Style.linkMenuAmburguer} to={'/Almoxarifado'}>Almoxarifado</Link>
+
+            </Card>
+          </div>
+        </Collapse> */}
+      </div>
+
+                </>
+      </div>
 
 
     
       <div className={Style.section}>
-          <MyRoutes /> <br /> {/* chama o arquivo de rotas */}
+          <MyRoutes /> <br />
           
       </div>
       
+      {
+        /*
       
+      <div className={Style.footer}>        
+        <h3>JMU</h3>
+        <hr />
+        /* <img src={logoJmu} className={Style.logoJmu} /> 
+      </div>
+      */
+      }
       
     </div>
   );
