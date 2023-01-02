@@ -32,10 +32,13 @@ const App = () =>{
             <Link to={'/'} className={Style.iconHouse}><FontAwesomeIcon icon={faHouse}  /> </Link>  
             <h1 className={Style.textHeader}>Equipamentos de Informática</h1>   
             <DropdownButton className={Style.dropdownPainelControle} id="dropdown-item-button"   variant="success" title="Painel de Controle">
-                <Link to={'/editarItens'} className={Style.editarItens}><Dropdown.ItemText >Gerenciar itens</Dropdown.ItemText></Link>
-                <Link to={'/plenario'} className={Style.editarItens}><Dropdown.ItemText >Plenário</Dropdown.ItemText></Link>
-                <Link to={'/adm'} className={Style.editarItens}><Dropdown.ItemText >Administrativo</Dropdown.ItemText></Link>
-                <Link to={'/video'} className={Style.editarItens}><Dropdown.ItemText >Vídeo Conferência</Dropdown.ItemText></Link>
+              <Link to={'/'} className={Style.editarItens}><Dropdown.ItemText ><FontAwesomeIcon className={Style.iconMenuPainelCOntrole} icon={faHouse}  />Home</Dropdown.ItemText></Link>
+                <Link to={'/plenario'} className={Style.editarItens}><Dropdown.ItemText ><FontAwesomeIcon className={Style.iconMenuPainelCOntrole} icon={faRightToBracket}  />Plenário</Dropdown.ItemText></Link>
+                <Link to={'/adm'} className={Style.editarItens}><Dropdown.ItemText ><FontAwesomeIcon className={Style.iconMenuPainelCOntrole} icon={faRightToBracket}  />Administrativo</Dropdown.ItemText></Link>
+                <Link to={'/almox'} className={Style.editarItens}><Dropdown.ItemText ><FontAwesomeIcon className={Style.iconMenuPainelCOntrole} icon={faRightToBracket}  />Almox</Dropdown.ItemText></Link>
+                <Link to={'/video'} className={Style.editarItens}><Dropdown.ItemText ><FontAwesomeIcon className={Style.iconMenuPainelCOntrole} icon={faRightToBracket}  />Vídeo Conferência</Dropdown.ItemText></Link>
+                <Link to={'/login'} className={Style.editarItens}><Dropdown.ItemText ><FontAwesomeIcon className={Style.iconMenuPainelCOntrole} icon={faPlus}  />Adicionar Item</Dropdown.ItemText></Link>
+                <Link to={'/searchItem'} className={Style.editarItens}><Dropdown.ItemText ><FontAwesomeIcon className={Style.iconMenuPainelCOntrole} icon={faSearchPlus}  /> Pesquisar Itens</Dropdown.ItemText></Link>
             </DropdownButton>   
 
           {/*Icone do menu amburger, quando clica, chama a função que abri a nav, usando o useState  */}

@@ -170,6 +170,7 @@ li{
 
 .dropdownPainelControle {
     /* margin-right: -400px; */
+    width: 200px;
 }
 
 /*area do login  */
@@ -191,6 +192,12 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*area menu painel de controle   */
+
+.iconMenuPainelCOntrole {
+    margin-right: 10px;
 }
 
 @media (max-width: 700px){
