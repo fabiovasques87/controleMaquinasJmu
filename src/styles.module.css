@@ -54,7 +54,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border: 0.2px solid;
+    border: 0.1px solid;
     box-shadow: 8px 5px 5px #ccc;
     height: 120px;
 }
@@ -169,13 +169,29 @@ li{
 
 
 .dropdownPainelControle {
-    margin-right: -400px;
+    /* margin-right: -400px; */
 }
 
+/*area do login  */
+.containerForm{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #198754; */
+    padding: 30px;
+    border-radius: 10px;
+}
 
+.containerForm input{
+    margin-bottom: 10px;
+}
 
-
-
+.tituloLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (max-width: 700px){
     .textHeader{
@@ -213,9 +229,11 @@ li{
         margin-right: -10px;
         z-index: 3;
     }
+    .Nav ul li{
+        font-size: 22px;
+    }
     
     .Nav ul li:hover{
-        border-top: 2px solid #000;
         border-bottom: 2px solid #000;
 
     }
@@ -228,18 +246,43 @@ li{
         z-index: 2;
         left: 20;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     .Nav ul{
         margin-top: 40px;
-        margin-left: 20%;
+        margin-left: 10%;
         padding: 30px;
         position: absolute;
         height: 100%;
     }
 
+    .iconMenuAmburguer{
+        font-size: 18px;
+        padding-right: 10px;
+    }
   
+    .dropdownPainelControle{
+        display: none;
+    } 
+    .iconHouse{
+        display: none;
+         
+     }
+
+     .containerForm{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid #198754; */
+        padding: 30px;
+        border-radius: 10px;
+    }
+    
+    .containerForm input{
+        margin-bottom: 10px;
+    }
 
     /* .Nav ul li {
         background-color: #198754;
@@ -275,13 +318,7 @@ li{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         transition: 0.5s;
     } */
-    .dropdownPainelControle{
-        display: none;
-    } 
-    .iconHouse{
-        display: none;
-         
-     }
+   
 
     /* .hamburger::before{
         top: -12px;

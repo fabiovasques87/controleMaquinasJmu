@@ -1,26 +1,19 @@
-import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
-import planta from '../assets/planta.jpg';
 import style from '../styles.module.css';
+import Form from 'react-bootstrap/Form';
+import { Button } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import React, { useState } from 'react';
-import Card from 'react-bootstrap/Card';
-import Collapse from 'react-bootstrap/Collapse';
+import { Link } from 'react-router-dom';
 
-export const Plenario =() =>{
-    
-    const [open, setOpen] = useState(false);
 
+export const SearchItem = () => {
     return (
-        
         <div>
-            
+            <Form>
+                <fieldset >
+                    <Form.Control type='text' placeholder='Pesquise pelo Número do Patrimonio' />
+                </fieldset>
 
-            <h2 className={style.textTituloPlenario}>Plenário</h2>
-            <div className={style.section}>
-                    <Table responsive>
+                <Table responsive>
                     <thead>
                             <tr>
                             <th>Patrimonio</th>
@@ -99,20 +92,7 @@ export const Plenario =() =>{
                             
                         </tbody>
                     </Table>
-
-           
-            </div>
-
-            {
-                /*
-            
-                <img src={planta} alt="" useMap='#image-map' className={style.img}  /><br />
-                 <map name="image-map" >
-                    <area shape="rect" coords="402,119,535,180" alt="Link 1" href="#teste" />
-                    <area shape="rect" coords="685,321,813,387" alt="Link 1" href="/escrivao" />
-                </map>
-                */
-            }
+            </Form>
         </div>
-    );  
+    );
 }

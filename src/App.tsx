@@ -7,6 +7,9 @@ import React, { useState }  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import {  faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import { Button } from "react-bootstrap";
@@ -44,12 +47,15 @@ const App = () =>{
             <nav className={Style.Nav}>              
              <ul>
               
-                <Link  className={Style.linkMenuAmburger} to={'/'}><li>Home</li> </Link>  
-                <Link className={Style.linkMenuAmburger} to={'/editarItens'}><li>Gerenciar itens</li> </Link>  
-                <Link className={Style.linkMenuAmburger} to={'/plenario'}><li>Plenário</li> </Link>  
-                <Link className={Style.linkMenuAmburger} to={'/adm'}><li>Administrativo</li> </Link>  
-                <Link  className={Style.linkMenuAmburger}  to={'/almox'}><li>Almoxarifado</li> </Link>  
-                <Link className={Style.linkMenuAmburger} to={'/video'}><li>Vídeo Conferência</li> </Link>  
+                <Link  className={Style.linkMenuAmburger} to={'/'}><li> <FontAwesomeIcon className={Style.iconMenuAmburguer} icon={faHouse}  /> Home</li> </Link>  
+                <Link className={Style.linkMenuAmburger} to={'/plenario'}><li><FontAwesomeIcon className={Style.iconMenuAmburguer} icon={faRightToBracket}  /> Plenário</li> </Link>  
+                <Link className={Style.linkMenuAmburger} to={'/adm'}><li><FontAwesomeIcon className={Style.iconMenuAmburguer} icon={faRightToBracket}  />Administrativo</li> </Link>  
+                <Link  className={Style.linkMenuAmburger}  to={'/almox'}><li><FontAwesomeIcon className={Style.iconMenuAmburguer} icon={faRightToBracket}  />Almoxarifado</li> </Link>  
+                <Link className={Style.linkMenuAmburger} to={'/video'}><li><FontAwesomeIcon className={Style.iconMenuAmburguer} icon={faRightToBracket}  />Vídeo Conferência</li> </Link>
+                <Link  className={Style.linkMenuAmburger} to={'/login'}><li> <FontAwesomeIcon className={Style.iconMenuAmburguer} icon={faPlus}  /> Adiconar Item</li> </Link> 
+                <Link  className={Style.linkMenuAmburger} to={'/SearchItem'}><li> <FontAwesomeIcon className={Style.iconMenuAmburguer} icon={faSearchPlus}  /> Pesquisar Item</li> </Link>  
+ 
+  
 
 
 
