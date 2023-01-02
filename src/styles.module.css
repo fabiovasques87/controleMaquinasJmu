@@ -252,11 +252,13 @@ li{
         width: 50px;
         height: 50px;
         cursor: pointer;
-        margin-right: -10px;
+        margin-right: -5px;
         z-index: 3;
     }
     .Nav ul li{
-        font-size: 22px;
+        font-size: 35px;
+        line-height: 45px;
+        padding: 10px;
     }
     
     .Nav ul li:hover{
@@ -267,24 +269,24 @@ li{
     .Nav{
         margin-right: 20px;
         height: 100vh;
-        width: 98%;
+        width: 100%;
         position: absolute;
         z-index: 2;
         left: 20;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.7);
     }
 
     .Nav ul{
-        margin-top: 40px;
-        margin-left: 10%;
+        margin-top: 20%;
+        margin-left: 45px;
         padding: 30px;
         position: absolute;
         height: 100%;
     }
 
     .iconMenuAmburguer{
-        font-size: 18px;
+        font-size: 25px;
         padding-right: 10px;
     }
   

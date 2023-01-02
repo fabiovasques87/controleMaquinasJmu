@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 export const SearchItem = () => {
@@ -12,7 +12,7 @@ export const SearchItem = () => {
         <div>
             <Form className={style.fieldsetSearch}>
                     <Form.Control type='text' placeholder='Pesquise pelo Número do Patrimonio' />
-                <FontAwesomeIcon  className={style.faSearchPlus} icon={faSearchPlus}  />
+                <FontAwesomeIcon  className={style.faSearchPlus} icon={faSearch}  />
             </Form>
                 <Table responsive>
                     <thead>
