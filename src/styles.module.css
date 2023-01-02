@@ -219,11 +219,18 @@ li{
     cursor: pointer;
 }
 
+
+
 @media (max-width: 700px){
+    .header{
+        background-color: #1B2F33;
+    }
+
     .textHeader{
         display: block;
-        font-size: 22px;
+        font-size: 20px;
         margin-left: 20px;
+        color: #fff;
         
      }
 
@@ -254,9 +261,10 @@ li{
         cursor: pointer;
         margin-right: -5px;
         z-index: 3;
+        color: #fff;
     }
     .Nav ul li{
-        font-size: 35px;
+        font-size: 30px;
         line-height: 45px;
         padding: 10px;
     }
@@ -278,7 +286,7 @@ li{
     }
 
     .Nav ul{
-        margin-top: 20%;
+        margin-top: 10%;
         margin-left: 45px;
         padding: 30px;
         position: absolute;
@@ -318,6 +326,18 @@ li{
 
         .fieldsetSearch{
             width: 100%;
+        }
+
+        /* logoJmu */
+
+        .logoJmu img{
+            width: 200px;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+            
         }
 
     /* .Nav ul li {
