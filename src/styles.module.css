@@ -198,7 +198,8 @@ li{
 }
 
 .containerForm input{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
 }
 
 .tituloLogin{
@@ -231,9 +232,7 @@ li{
     cursor: pointer;
 }
 
-.table{
-    margin-bottom: 100%;
-}
+
 
 
 @media (max-width: 700px){
@@ -333,6 +332,9 @@ li{
     .containerForm input{
         margin-bottom: 10px;
     }
+    .table{
+        margin-bottom: calc(100vh - 650px);
+    }
 
     /*Search */
 
@@ -367,6 +369,10 @@ li{
         }
         .iconHouseHeader{
             display: none;
+        }
+
+        .containerForm{
+            margin-bottom: calc(100vh - 650px);
         }
 
     /* .Nav ul li {

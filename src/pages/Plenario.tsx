@@ -15,7 +15,7 @@ export const Plenario =() =>{
 
     return (
         
-        <div>
+        <div className={style.table}>
             
 
             <h2 className={style.textTituloPlenario}>Plenário</h2>
