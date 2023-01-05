@@ -66,6 +66,33 @@ export const Index =() =>{
                                 </Card.Body>
                             </Link>
                         </Card> 
+                        <Card style={{ width: '300px', height:'180px ', border: '0'}}>
+                            <Link to={'/oficiais'} className={Style.link}>
+                                <Card.Body className={Style.cardBody}>
+                                    <Card.Title className={Style.titleCard}>Oficiais de Justiça</Card.Title>                               
+                                {/* <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>*/}
+                                </Card.Body>
+                            </Link>
+                        </Card> 
+                        <Card style={{ width: '300px', height:'180px ', border: '0'}}>
+                            <Link to={'/juizSubstituto'} className={Style.link}>
+                                <Card.Body className={Style.cardBody}>
+                                    <Card.Title className={Style.titleCard}>Juiz substituto</Card.Title>                               
+                                {/* <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>*/}
+                                </Card.Body>
+                            </Link>
+                        </Card> 
+                        <Card style={{ width: '300px', height:'180px ', border: '0'}}>
+                            <Link to={'/juizSubstituto'} className={Style.link}>
+                                <Card.Body className={Style.cardBody}>
+                                    <Card.Title className={Style.titleCard}>Juiz Titular</Card.Title>                               
+                                {/* <Link to="/Plenario" className={Style.linkButton}><button className={Style.button}>Ir para </button></Link>*/}
+                                </Card.Body>
+                            </Link>
+                        </Card> 
+                        
+                        
+                        
                        
                          
                          

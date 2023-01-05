@@ -9,16 +9,24 @@ import {  faHouse } from '@fortawesome/free-solid-svg-icons';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import { Button } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import Collapse from 'react-bootstrap/Collapse';
 import logoJmu from './assets/logoJmu.png';
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 const App = () =>{
 
   const [showNav, setShowNav] = useState(false);
+
+  const navigate = useNavigate()
+
 
   const Open = () => {
     setShowNav(!showNav);
@@ -28,8 +36,9 @@ const App = () =>{
     <div>
 
     
-      <div className={Style.header}>
-            <Link to={'/'} className={Style.iconHouse}><FontAwesomeIcon icon={faHouse}  /> </Link>  
+      <div className={Style.header}>    
+            <Link to={'/'} className={Style.iconHouseHeader}><FontAwesomeIcon icon={faHouse}  /> </Link> 
+         
             <h1 className={Style.textHeader}>Equipamentos de Informática JMU</h1>   
             <DropdownButton className={Style.dropdownPainelControle} id="dropdown-item-button"   variant="success" title="Painel de Controle">
               <Link to={'/'} className={Style.editarItens}><Dropdown.ItemText ><FontAwesomeIcon className={Style.iconMenuPainelCOntrole} icon={faHouse}  />Home</Dropdown.ItemText></Link>
@@ -79,7 +88,12 @@ const App = () =>{
           
       </div>
       
+      <div className={Style.footer}>
       
+        <FontAwesomeIcon className={Style.faArrowLeft} onClick={() => navigate(-1)} icon={faArrowLeft} />
+     
+        <Link to={'/'} className={Style.iconHouse}><FontAwesomeIcon icon={faHouse}  /> </Link> 
+      </div>
       
     </div>
   );

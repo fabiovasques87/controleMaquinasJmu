@@ -9,7 +9,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export const SearchItem = () => {
     return (
-        <div>
+        <div className={style.table}>
             <Form className={style.fieldsetSearch}>
                     <Form.Control type='text' placeholder='Pesquise pelo Número do Patrimonio' />
                 <FontAwesomeIcon  className={style.faSearchPlus} icon={faSearch}  />

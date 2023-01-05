@@ -7,7 +7,7 @@ body{
 
 .container {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
     gap: 15px;
     margin-left: 5px;
 }
@@ -99,8 +99,8 @@ li{
 }
 
 .footer{
-    display: flex;
-    justify-content: center;
+    display: none;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100px;
@@ -121,8 +121,19 @@ li{
     /* margin-left: -60rem; */
     color: #198754;
     font-size: 22px;
-    
 }
+.iconHouseHeader{
+    color: #198754;
+    font-size: 22px;
+}
+.iconHouseHeader:hover{
+    color:#333;
+}
+
+.faArrowLeft{
+    color: #198754;
+}
+
 .iconHouse:hover{
     color: #000;
     
@@ -151,6 +162,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100%;
 }
 
 .alignButtonTable{
@@ -219,6 +231,9 @@ li{
     cursor: pointer;
 }
 
+.table{
+    margin-bottom: 100%;
+}
 
 
 @media (max-width: 700px){
@@ -301,10 +316,7 @@ li{
     .dropdownPainelControle{
         display: none;
     } 
-    .iconHouse{
-        display: none;
-         
-     }
+    
 
      .containerForm{
         width: 100%;
@@ -338,6 +350,23 @@ li{
             align-items: center;
             margin-left: 10%;
             
+        }
+
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: -120px;
+            
+        }
+        .iconHouseHeader{
+            display: none;
         }
 
     /* .Nav ul li {
